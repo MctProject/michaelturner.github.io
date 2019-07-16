@@ -3,7 +3,40 @@
     <title>Michael Turner</title>
     <link rel="stylesheet" href="css/menubar.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
+<header>
+    <div class="navBar">
+        <div class="spacerfill"></div>
+        <h2 class="NavTitle">Michael Turner</h2>
+        <div class="spacerfill"><h2 class="NavTitleMob">Michael Turner</h2></div>
+        <div class="navMenu">
+            <div></div>
+            <a href="index.html" class="menuBtn">Home</a>
+            <a href="projects.html" class="menuBtn">Projects</a>
+            <a href="plans.html" class="menuBtnAct">Plans</a>
+            <a href="contact.html" class="menuBtn">Contact</a>
+        </div>    
+        <div class="extra">
+                <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        </div>
+        <div class="navMenuMob">
+                <a href="index.html" class="menuBtnMob">Home</a>
+                <a href="projects.html" class="menuBtnMob">Projects</a>
+                <a href="plans.html" class="menuBtnMobAct">Plans</a>
+                <a href="contact.html" class="menuBtnMob">Contact</a>
+            </div>    
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('.navMenuMob').toggleClass('active')
+            })
+        })
+    </script>
+</header>
 <body>
     
 </body>

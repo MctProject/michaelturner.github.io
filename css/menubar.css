@@ -1,91 +1,131 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 100px;
+h2{
+    padding: 0;
+    margin: 0;
+}
+
+.navBar{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
     background: #262626;
+    height: 50px;
     width: 100%;
-    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
 }
 
-header .logo{
+.navTitle{
+    text-align: center;
     color: #ffffff;
-    height: 50px;
-    font-size: 24px;
-    float: left;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.navTitleMob{
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;    
+}
+
+.navMenu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+.menuBtn{
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+    padding: 15px;
     font-weight: bold;
 }
 
-header nav{
-    float: right;
-}
-
-header nav ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-header nav ul li{
-    list-style: none;
-}
-
-header nav ul li a{
-    height: 50px;
-    line-height: 50px;
-    padding: 0 20px;
-    color: #ffffff;
+.menuBtnAct{
     text-decoration: none;
     display: block;
+    color: #ffffff;
+    padding: 15px;
+    font-weight: bold;
+    background: #05b8ff;
 }
 
-header nav ul li a.active,
-header nav ul li a:hover{
+.menuBtnMob{
+    text-decoration: none;
+    display: block;
     color: #ffffff;
-    background: #2196f3;
+    padding: 15px;   
+    font-weight: bold; 
+}
+
+.menuBtnMobAct{
+    text-decoration: none;
+    display: none;
+    color: #ffffff;
+    padding: 15px;   
+    font-weight: bold; 
+    background: #05b8ff;
+}
+
+.menuBtn:hover{
+    background: #05b8ff;
 }
 
 .menu-toggle{
     color: #ffffff;
-    float: right;
     line-height: 50px;
     font-size: 24px;
     cursor: pointer;
     display: none;
 }
 
+.spacerfill{
+    display: none;
+}
+
 @media (max-width: 991px){
-    header{
-        padding: 0 20px;
-    }
     .menu-toggle{
         display: block;
     }
-    header nav{
+    .navMenu{
+        display: none;
+    }
+    .spacerfill{
+        display: block;
+    }
+    .navTitle{
+        display: none;
+    }
+    .navMenuMob{
+        position: absolute;
+        display: grid;
+        grid-template-rows: 50px 50px 50px 50px;
         position: absolute;
         width: 100%;
         height: calc(100vh - 50px);
-        background: #333333;
+        background: #333;
         top: 50px;
         left: -100%;
         transition: 0.5s;
     }
-    header nav.active{
+    .navMenuMob.active{
         left: 0;
     }
-}
-
-header nav ul{
-    display: block;
-    text-align: center;
-}
-
-header nav ul li a{
-    border-bottom: 1px solid rgba(0,0,0,.2);
+        
+    .menuBtnMob{
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+    .menuBtnMob:hover{
+        background: #05b8ff;
+    }
+    .menuBtnMobAct{
+        display: block;
+    }
 }
