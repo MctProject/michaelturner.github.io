@@ -1,5 +1,6 @@
 body{
-    align-content: center;
+    align-content: center;    
+    background: #dddddd;
 }
 
 .HomeBanner{
@@ -12,5 +13,66 @@ body{
 }
 
 .BestProjects{
+    display: grid;
+    grid-gap: 25px;
+    height: 500px;
+    grid-template-columns: 2fr 2fr 2fr;
+    justify-items: center;
+}
+
+.ReadBtn{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.ReadMore{
+    text-decoration: none;
+    color: #ffffff;
+    background: #333333;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;  
     
+    font-size: 25px;
+}
+
+.ReadMore:hover{
+    background: #05b8ff;
+    color: #000000;
+}
+
+.Desc{
+    padding: 10px;
+}
+
+.Project{
+    background: #757575;
+    width: 450px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    align-items: center;
+    border-radius: 25px;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 50px;
+}
+
+.GridSpacer2{
+    display: none;
+}
+.GridSpacer3{
+    display: none;
+}
+
+@media only screen and (max-width: 1450px){
+    .BestProjects{        
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+@media only screen and (max-width: 925px){
+    .BestProjects{        
+        grid-template-columns: 2fr;
+    }
 }

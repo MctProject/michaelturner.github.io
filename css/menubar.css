@@ -40,6 +40,10 @@ h2{
     
 }
 
+.navMenuMob{
+    display: none;
+}
+
 .menuBtn{
     text-decoration: none;
     display: block;
@@ -51,7 +55,7 @@ h2{
 .menuBtnAct{
     text-decoration: none;
     display: block;
-    color: #ffffff;
+    color: #000000;
     padding: 15px;
     font-weight: bold;
     background: #05b8ff;
@@ -68,7 +72,7 @@ h2{
 .menuBtnMobAct{
     text-decoration: none;
     display: none;
-    color: #ffffff;
+    color: #000000;
     padding: 15px;   
     font-weight: bold; 
     background: #05b8ff;
@@ -76,6 +80,7 @@ h2{
 
 .menuBtn:hover{
     background: #05b8ff;
+    color: #000000;
 }
 
 .menu-toggle{
@@ -124,6 +129,7 @@ h2{
     }
     .menuBtnMob:hover{
         background: #05b8ff;
+        color: #000000;
     }
     .menuBtnMobAct{
         display: block;
