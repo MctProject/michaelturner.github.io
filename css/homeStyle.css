@@ -65,15 +65,34 @@ body{
     display: none;
 }
 
+.Spacer{
+    display: none;
+}
+
+@media only screen and (max-width: 1907px){
+    .BestProjects{        
+        grid-template-columns: 2fr 2fr 2fr;        
+    }
+    .Spacer{
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 1450px){
     .BestProjects{        
         grid-template-columns: 2fr 2fr;
+    }
+    .Spacer{
+        display: none;
     }
 }
 
 @media only screen and (max-width: 925px){
     .BestProjects{        
         grid-template-columns: 2fr;
+    }
+    .Spacer{
+        display: none;
     }
 }
 
