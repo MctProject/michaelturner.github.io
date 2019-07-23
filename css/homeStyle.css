@@ -7,9 +7,23 @@ body{
     width: 100vw;
 }
 
+.Content{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+}
+
 .AboutMe{
     text-align: center;
+    align-items: center;
 
+    padding: 10px;
+    margin: 10px;
+    
+    background: #999999;
+    width: 50%;
+    border-radius: 25px;
 }
 
 .BestProjects{
